@@ -22,6 +22,27 @@ Commands :
     -h, help               :    For Help
 ```
 
+## Features
+### 1. Interactive Brainfuck
+Just launch brainfuck.exe after building the project
+```
+Interactive Brainfuck (v1.0.0)
+Type exit to Exit
+brainfuck >> bf code
+```
+### 2. Print Memory
+This will run & printing the memory values <br>
+After building the project, run
+```
+brainfuck -m <filename>
+```
+Example ```brainfuck -m test.bf```:
+This will output the following
+```
+Hello World!
+
+Memory:  [0 87 100 33 10]
+```
 ## License
 
 This project is licensed under MIT License, check out the [LICENSE](./LICENSE) file.
