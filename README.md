@@ -24,15 +24,16 @@ Commands :
 
 ## Features
 ### 1. Interactive Brainfuck
-Just launch brainfuck.exe after building the project
+Here you can run brainfuck code without creating any file<br>
+**Usage**: Just launch brainfuck.exe after building the project
 ```
 Interactive Brainfuck (v1.0.0)
 Type exit to Exit
 brainfuck >> bf code
 ```
 ### 2. Print Memory
-This will run & printing the memory values <br>
-After building the project, run
+This is used for running & printing the memory values in the same time<br>
+**Usage**: After building the project, run
 ```
 brainfuck -m <filename>
 ```
