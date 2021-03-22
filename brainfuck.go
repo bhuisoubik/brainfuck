@@ -46,7 +46,11 @@ func interactiveConsole() {
 	src,inp, exit := "","", false
 	for !exit {
 		fmt.Print("\nbrainfuck >> ")
-		fmt.Scanln(&inp)
+		scanner := bufio.NewScanner(os.Stdin)
+		if scanner.Scan() {
+			inp = scanner.Text()
+			src += inp
+		}
 		if inp == "exit" {
 			exit = true
 		} else {
@@ -75,15 +79,11 @@ func interpret(src []byte) {
 		} else if src[i] == '+' {
 			if mem[current] == 255 {
 				mem[current] = 0
-			} else {
-				mem[current]++
-			}
+			} else { mem[current]++	}
 		} else if src[i] == '-' {
 			if mem[current] == 0 {
 				mem[current] = 255
-			} else {
-				mem[current]--
-			}
+			} else { mem[current]--	}
 		} else if src[i] == '.' {
 			fmt.Print(string(mem[current]))
 		} else if src[i] == ',' {
