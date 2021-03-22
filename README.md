@@ -10,7 +10,16 @@ git clone https://github.com/soubikbhuiwk007/brainfuck.git
 cd brainfuck
 go build
 ```
-
+## Install
+You can install this brainfuck cli to use it globally across your system.
+```
+cd $GOPATH/src/github.com/soubikbhuiwk007/brainfuck
+go install
+```
+To check if it was properly installed on your system, you can run.
+```
+brainfuck -v
+```
 ## Usage
 ```
 Usage : 
