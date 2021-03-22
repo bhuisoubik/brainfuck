@@ -61,4 +61,4 @@ Memory:  [0 87 100 33 10]
 
 This project is licensed under MIT License, check out the [LICENSE](./LICENSE) file.
 
-#### If You found any problem or any fault, feel free to create an issue here
+#### If You found any problem, feel free to create an issue here
