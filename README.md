@@ -20,6 +20,10 @@ To check if it was properly installed on your system, you type the following in 
 ```
 brainfuck -v
 ```
+This should print:
+```
+Version: 1.0.0
+```
 ## Usage
 ```
 Usage : 
