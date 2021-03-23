@@ -1,6 +1,7 @@
 # Brainfuck Interpreter
 CLI Tool for Interpreting Brainfuck Code written in Go<br>
-Example : A sample [Hello World](./test.bf) brainfuck file is included in the project's root directory
+Example : A sample [Hello World](./test.bf) brainfuck file is included in the project's root directory<br>
+NOTE: You need to have go1.16 installed on your system.
 ## Build
 In terminal write the following commands
 ```
