@@ -3,10 +3,21 @@ CLI Tool for Interpreting Brainfuck Code written in Go<br>
 Example : A sample [Hello World](./test.bf) brainfuck file is included in the project's root directory<br>
 NOTE: You need to have go1.16 installed on your system.
 ## Build
-In terminal write the following commands
+### Windows
+In command prompt write the following commands
+```
+cd %GOPATH%/src
+mkdir github.com/soubikbhuiwk007 && cd github.com/soubikbhuiwk007
+git clone https://github.com/soubikbhuiwk007/brainfuck.git
+cd brainfuck
+go build
+```
+### MacOS, Linux
+Open the terminal and write the following commands
 ```
 cd $GOPATH/src
-mkdir github.com/soubikbhuiwk007 && cd github.com/soubikbhuiwk007
+mkdir github.com/soubikbhuiwk007
+cd github.com/soubikbhuiwk007
 git clone https://github.com/soubikbhuiwk007/brainfuck.git
 cd brainfuck
 go build
