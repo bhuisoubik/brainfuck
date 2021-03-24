@@ -3,24 +3,18 @@ CLI Tool for Interpreting Brainfuck Code written in Go<br>
 Example : A sample [Hello World](./test.bf) brainfuck file is included in the project's root directory<br>
 NOTE: You need to have go1.16 installed on your system.
 ## Build
-### Windows
-In command prompt write the following commands
+In terminal write the following commands
 ```
-cd %GOPATH%/src
-mkdir github.com/soubikbhuiwk007 && cd github.com/soubikbhuiwk007
+mkdir $GOPATH/src/github.com/soubikbhuiwk007
+cd $GOPATH/src/github.com/soubikbhuiwk007
 git clone https://github.com/soubikbhuiwk007/brainfuck.git
 cd brainfuck
-go build
+make build
 ```
-### MacOS, Linux
-Open the terminal and write the following commands
+## Run
 ```
-cd $GOPATH/src
-mkdir github.com/soubikbhuiwk007
-cd github.com/soubikbhuiwk007
-git clone https://github.com/soubikbhuiwk007/brainfuck.git
-cd brainfuck
-go build
+cd $GOPATH/src/github.com/soubikbhuiwk007
+make run
 ```
 ## Install
 You can install this brainfuck cli to use it globally across your system.
@@ -69,8 +63,14 @@ Hello World!
 
 Memory:  [0 87 100 33 10]
 ```
+## Makefile
+```make build``` to build the project<br>
+```make run``` to run the main.go<br>
+```make clean``` to clean (remove executables) the project<br>
+```make version``` to print the version<br>
 ## License
 
 This project is licensed under MIT License, check out the [LICENSE](./LICENSE) file.
 
-#### If You found any problem, feel free to create an issue here
+#### If You found any problem, you can create an issue here
+#### Feel free to fork the repo, and contribute to it
