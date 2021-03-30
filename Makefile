@@ -6,7 +6,7 @@ run:
 	@echo "Running main.go ..."
 	${GO} run main.go
 
-build:
+brainfuck:
 	@echo "Building executable..."
 	${GO} build -o ${BUILD}/brainfuck main.go
 	@echo "Finished"
