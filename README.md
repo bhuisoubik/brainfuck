@@ -7,12 +7,12 @@ CLI Tool for Interpreting Brainfuck Code written in Go<br>
 2. make
 ```
 Open your terminal and write the following command
-```
-mkdir $GOPATH/src/github.com/soubikbhuiwk007
-cd $GOPATH/src/github.com/soubikbhuiwk007
-git clone https://github.com/soubikbhuiwk007/brainfuck.git
-cd brainfuck
-make
+```shell
+$ mkdir $GOPATH/src/github.com/soubikbhuiwk007
+$ cd $GOPATH/src/github.com/soubikbhuiwk007
+$ git clone https://github.com/soubikbhuiwk007/brainfuck.git
+$ cd brainfuck
+$ make
 ```
 ## Features
 ### Interactive Brainfuck
@@ -47,8 +47,8 @@ Command:
 ```
 ## Install
 Go Project's root directory and in terminal type:
-```
-make install
+```shell
+$ make install
 ```
 Check if it was correctly installed<br>
 Try running: ```brainfuck -v```<br>
