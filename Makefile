@@ -1,23 +1,19 @@
-V = 1.0.1
-BUILD = ${CURDIR}/build
 GO = go
 
-run:
-	@echo "Running main.go ..."
-	${GO} run main.go
+all: 
+	$(GO) build ./cmd/brainfuck
+	$(GO) build ./cmd/ibf
 
 brainfuck:
-	@echo "Building executable..."
-	${GO} build -o ${BUILD}/brainfuck main.go
-	@echo "Finished"
+	$(GO) build ./cmd/brainfuck
+
+ibf:
+	$(GO) build ./cmd/ibf
+
+install:
+	$(GO) install ./cmd/brainfuck
+	$(GO) install ./cmd/ibf
 
 clean:
-	@echo "Removing executable..."
-	rm -f ${BUILD}/brainfuck
-	@echo "Completed"
-	@echo "Removing build directory..."
-	rmdir ${BUILD}
-	@echo "Completed"
-
-version:
-	@echo "Version :" ${V}
+	rm -f ibf
+	rm -f brainfuck
