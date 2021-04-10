@@ -1,8 +1,8 @@
 package bf
 
 import (
-	"os"
 	"bufio"
+	"os"
 )
 
 func input() byte {
