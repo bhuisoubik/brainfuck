@@ -26,17 +26,17 @@ SOFTWARE.
 package main
 
 import (
-	"fmt"
-	"os"
 	"bufio"
+	"fmt"
 	"github.com/soubikbhuiwk007/brainfuck/bf"
+	"os"
 )
 
-var version = "1.0.0" 
+var version = "1.0.0"
 
 func ibf() {
 	fmt.Printf("Interactive Brainfuck (v%v)\nType exit to Exit", version)
-	src,inp, exit := "","", false
+	src, inp, exit := "", "", false
 	for !exit {
 		fmt.Print("\nibf >> ")
 		scanner := bufio.NewScanner(os.Stdin)
