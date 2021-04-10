@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"github.com/soubikbhuiwk007/brainfuck/bf"
 	"os"
