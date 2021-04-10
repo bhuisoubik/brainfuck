@@ -14,11 +14,7 @@ func ibf() {
 	src, inp, exit := "", "", false
 	for !exit {
 		fmt.Print("\nibf >> ")
-		scanner := bufio.NewScanner(os.Stdin)
-		if scanner.Scan() {
-			inp = scanner.Text()
-			src += inp
-		}
+		fmt.Scanln(&inp)
 		if inp == "exit" {
 			exit = true
 		} else {
