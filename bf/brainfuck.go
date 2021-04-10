@@ -10,7 +10,7 @@ func Parse(src string) {
 	current, fPtr := 0, 0
 	for i := 0; i < len(src); i++ {
 		if src[i] == '>' {
-			if len(mem) - 1 <= current {
+			if len(mem)-1 <= current {
 				current++
 				mem = append(mem, 0)
 			} else {
@@ -26,11 +26,15 @@ func Parse(src string) {
 		} else if src[i] == '+' {
 			if mem[current] == 255 {
 				mem[current] = 0
-			} else { mem[current]++	}
+			} else {
+				mem[current]++
+			}
 		} else if src[i] == '-' {
 			if mem[current] == 0 {
 				mem[current] = 255
-			} else { mem[current]--	}
+			} else {
+				mem[current]--
+			}
 		} else if src[i] == '.' {
 			fmt.Print(string(mem[current]))
 		} else if src[i] == ',' {
