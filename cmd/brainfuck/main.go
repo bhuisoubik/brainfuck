@@ -27,9 +27,9 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"io/ioutil"
 	"github.com/soubikbhuiwk007/brainfuck/bf"
+	"io/ioutil"
+	"os"
 )
 
 var version = "1.0.2"
@@ -69,7 +69,7 @@ func main() {
 		error()
 	} else {
 		switch args[1] {
-		case "-v",  "version":
+		case "-v", "version":
 			fmt.Printf("brainfuck version: %v\n", version)
 		case "-h", "help":
 			help()
