@@ -6,7 +6,6 @@ import (
 	"os"
 	
 	"github.com/soubikbhuiwk007/brainfuck/bf"
-
 )
 
 var version = "1.0.2"
