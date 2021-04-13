@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	
-		"github.com/soubikbhuiwk007/brainfuck/bf"
+	"github.com/soubikbhuiwk007/brainfuck/bf"
 
 )
 
