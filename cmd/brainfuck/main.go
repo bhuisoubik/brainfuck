@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/soubikbhuiwk007/brainfuck/bf"
 	"io/ioutil"
 	"os"
+	
+		"github.com/soubikbhuiwk007/brainfuck/bf"
+
 )
 
 var version = "1.0.2"
