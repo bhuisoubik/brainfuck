@@ -4,6 +4,7 @@ CLI Tool for Interpreting Brainfuck Code written in Go<br>
 ### Prerequisite
 1. `Go` 1.16.x
 2. `make`
+
 Open your terminal and write the following command
 ```shell
 $ mkdir $GOPATH/src/github.com/soubikbhuiwk007
